@@ -1,0 +1,24 @@
+{
+  "name": "taskhoundapijs",
+  "version": "1.0.0",
+  "description": "An API for the Task Hound application built in Node JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "task",
+    "runner",
+    "express"
+  ],
+  "author": "Eric Zorn",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "moment": "^2.22.2",
+    "sequelize": "^4.41.2"
+  }
+}
