@@ -18,6 +18,13 @@ router.get("/", (req, res, next) => {
     );
 });
 
+// Get a specific task
+router.get("/:id", (req, res, next) => {
+  models.Task.findById(req.params.id)
+    .then(task => res.json({ success: true, data: task }))
+    .catch(error => console.log(error));
+});
+
 // Post a task
 router.post("/", async (req, res, next) => {
   // Destructuring Body Object
@@ -44,12 +51,12 @@ router.post("/", async (req, res, next) => {
     res.status(400).json("updatedAt is null or undefined");
   } else {
     models.Task.create({
-      title: title,
-      body: body,
-      description: description,
-      completed: completed,
-      createdAt: createdAt,
-      updatedAt: updatedAt
+      title: req.body.title,
+      body: req.body.body,
+      description: req.body.description,
+      completed: req.body.completed,
+      createdAt: req.body.createdAt,
+      updatedAt: req.body.updatedAt
     }).then(data =>
       res.status(201).json({
         success: true,
@@ -57,6 +64,13 @@ router.post("/", async (req, res, next) => {
       })
     );
   }
+});
+
+// Delete Specific Task
+router.delete("/:id", (req, res, next) => {
+  models.Task.destroy({ where: { id: req.params.id } }).then(data =>
+    res.json(data)
+  );
 });
 
 module.exports = router;
