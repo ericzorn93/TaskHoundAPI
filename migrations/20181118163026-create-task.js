@@ -9,19 +9,15 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       title: {
-        allowNull: false,
         type: Sequelize.STRING
       },
       body: {
-        allowNull: false,
         type: Sequelize.TEXT
       },
       description: {
-        allowNull: false,
         type: Sequelize.TEXT
       },
       completed: {
-        allowNull: false,
         type: Sequelize.BOOLEAN
       },
       createdAt: {

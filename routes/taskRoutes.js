@@ -63,7 +63,9 @@ router.post("/", async (req, res, next) => {
       completed: "0",
       createdAt: "2018-11-18T23:24:06.443Z",
       updatedAt: "2018-11-18T23:24:06.443Z"
-    }).then(data => res.json(data).catch(err => console.log(err)));
+    })
+      .then(data => res.json(data))
+      .catch(err => console.log(err));
   }
 });
 

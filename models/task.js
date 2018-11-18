@@ -4,8 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     "Task",
     {
       title: DataTypes.STRING,
-      Body: DataTypes.TEXT,
-      Description: DataTypes.TEXT,
+      Body: DataTypes.STRING,
+      Description: DataTypes.STRING,
       Completed: DataTypes.BOOLEAN,
       createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE
