@@ -21,6 +21,14 @@ module.exports = {
         completed: false,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        title: "Testing Title",
+        body: "This is a testing body for the first task",
+        description: "How do you like this description?",
+        completed: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ]);
   },
