@@ -12,4 +12,15 @@ const dbConfig = new Sequelize(
   }
 );
 
-module.exports = dbConfig;
+// Schemas
+const Task = dbConfig.define("task", {
+  title: Sequelize.STRING,
+  body: Sequelize.TEXT,
+  completed: Sequelize.BOOLEAN,
+  due_date: Sequelize.DATE,
+  date: Sequelize.DATE
+});
+
+module.exports = {
+  dbConfig: dbConfig
+};

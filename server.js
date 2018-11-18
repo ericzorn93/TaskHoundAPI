@@ -15,7 +15,7 @@ const taskRoutes = require("./routes/taskRoutes");
 app.use("/api/v1/tasks", taskRoutes);
 
 // Port
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 // Run Server
 app.listen(port, () =>

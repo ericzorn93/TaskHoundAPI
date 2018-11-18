@@ -10,13 +10,6 @@ const configuration = {
   dialect: "mysql"
 };
 
-// const Task = dbConfig.define('task', {
-//     title: Sequelize.STRING,
-//     description: Sequelize.TEXT,
-//     deadline: Sequelize.DATE
-// });
-
 module.exports = {
-  configuration: configuration,
-  // Task: Task
+  configuration: configuration
 };
