@@ -23,10 +23,10 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        title: "Testing Title",
-        body: "This is a testing body for the first task",
-        description: "How do you like this description?",
-        completed: false,
+        title: "Second Test",
+        body: "Second body for the second task",
+        description: "Another Description?",
+        completed: true,
         createdAt: new Date(),
         updatedAt: new Date()
       }
