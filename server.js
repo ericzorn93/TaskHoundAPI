@@ -6,7 +6,8 @@ const cors = require("cors");
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // Route Imports
 const taskRoutes = require("./routes/taskRoutes");
