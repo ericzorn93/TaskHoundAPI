@@ -2,7 +2,7 @@
 const DB_Info = require("../db/");
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize(
+const dbConfig = new Sequelize(
   DB_Info.configuration.database,
   DB_Info.configuration.username,
   DB_Info.configuration.password,
@@ -12,4 +12,4 @@ const sequelize = new Sequelize(
   }
 );
 
-module.exports = sequelize;
+module.exports = dbConfig;

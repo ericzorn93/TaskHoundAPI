@@ -1,3 +1,6 @@
+const Sequelize = require("sequelize");
+const dbConfig = require("./sequalizeSetup");
+
 const configuration = {
   database: "Task_Hound_JS",
   path: "localhost",
@@ -7,9 +10,13 @@ const configuration = {
   dialect: "mysql"
 };
 
-const TaskSchema = {};
+// const Task = dbConfig.define('task', {
+//     title: Sequelize.STRING,
+//     description: Sequelize.TEXT,
+//     deadline: Sequelize.DATE
+// });
 
 module.exports = {
   configuration: configuration,
-  TaskSchema: TaskSchema
+  // Task: Task
 };

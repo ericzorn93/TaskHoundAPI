@@ -20,6 +20,6 @@ const port = process.env.PORT || 5000;
 // Run Server
 app.listen(port, () =>
   console.log(
-    chalk.red.underline.bold.bgGreenBright.bold(`Listenting on port...${port}!`)
+    chalk.underline.white.bgBlack.bold(`Listenting on port...${port}!`)
   )
 );
